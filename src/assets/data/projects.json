@@ -23,7 +23,7 @@
       }
     ],
     "year": 2023,
-    "thumbnail": "/assets/henkai-web.png"
+    "thumbnail": "/assets/henkai-web.jpg"
   },
   {
     "id": 2,
@@ -45,6 +45,6 @@
     ],
     "year": 2024,
     "url": "https://github.com/andrejsipka/andrejsipka",
-    "thumbnail": "/assets/andrejsipka-web.png"
+    "thumbnail": "/assets/andrejsipka-web.jpg"
   }
 ]
