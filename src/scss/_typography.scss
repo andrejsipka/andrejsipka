@@ -1,0 +1,57 @@
+$fs-xlarge: 6.4rem;
+$fs-large: 3rem;
+$fs-medium: 2rem;
+$fs-regular: 1.6rem;
+
+/* Heading and Titles */
+.heading {
+  font-weight: 600;
+  line-height: 1.2;
+
+  &__primary {
+    font-size: $fs-xlarge;
+
+    @media screen and (max-width: 768px) {
+      font-size: 48px;
+    }
+  }
+
+  &__secondary {
+    font-size: $fs-large;
+  }
+
+  &__tertiary {
+    font-size: $fs-medium;
+  }
+
+  &__regular {
+    font-size: $fs-regular;
+  }
+
+  & > span {
+    display: block;
+  }
+
+  & + :is(p), & + .text {
+    margin-top: 1rem;
+  }
+}
+
+/* Paragraphs and text */
+.text {
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 480px;
+
+  &__medium {
+    font-size: $fs-medium;
+  }
+
+  &__regular {
+    font-size: $fs-regular;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+}

@@ -1,0 +1,69 @@
+<section class="hero hero--center homepage-hero">
+    <div class="hero__background">
+        <div class="hero__container">
+            <article class="hero__layout">
+                <h1 class="heading heading__primary">
+                    <span>Hello! I'm Andrej,</span>
+                    <span>Full-stack developer</span>
+                </h1>
+
+                <p class="text text__medium">I’m building scaleable, modern web applications and services.</p>
+
+                <div class="homepage-hero__actions">
+                    <a class="button button__primary" routerLink="/about">About</a>
+                    <a class="button button__outlined" routerLink="/">GitHub</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="block work">
+    <div class="block__container">
+        <div class="block__layout">
+            <header>
+                <h1 class="heading heading__secondary">Work</h1>
+            </header>
+
+            <app-project-list [projects]="projectService.projects()" />
+        </div>
+    </div>
+</section>
+
+<section class="block block--grid-cols-2">
+    <div class="block__container">
+        <article class="block__layout">
+            <div>
+                <header>
+                    <h1 class="heading heading__secondary">What I do</h1>
+                </header>
+
+                <p class="text text__medium">
+                    From the early stages of application development to bringing it to life. I’m enjoying
+                    the process of creation and these days I’m rocking on languages such as
+                    <strong>TypeScript</strong> and
+                    <strong>C#</strong>.
+                </p>
+                <p class="text text__medium">
+                    Primarily my focus aims to build with <strong>Angular</strong>
+                    and <strong>.NET</strong>.
+                </p>
+            </div>
+
+            <div>
+                <img ngSrc="/assets/me.png" priority fill alt="Me" class="drawing" style="height: 360px">
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="block">
+  <div class="block__container">
+    <div class="block__layout">
+      <h1 class="heading heading__secondary">Get in touch</h1>
+      <p class="text text__medium">You can find me on
+        <a class="link link--underline" href="https://www.linkedin.com/in/andrejsipka/" target="_blank"><strong>LinkedIn</strong></a>
+        and <a class="link link--underline" target="_blank" href="https://github.com/andrejsipka"><strong>GitHub</strong></a>.</p>
+    </div>
+  </div>
+</section>

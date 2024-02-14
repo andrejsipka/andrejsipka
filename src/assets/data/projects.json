@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Henkai architects",
+    "description": "Portfolio website for architects to showcase their projects.",
+    "url": "https://henkai.cz",
+    "tags": [
+      {
+        "id": 3,
+        "label": "REST API"
+      },
+      {
+        "id": 4,
+        "label": "Theme"
+      },
+      {
+        "id": 7,
+        "label": "React.js"
+      },
+      {
+        "id": 5,
+        "label": "Wordpress"
+      }
+    ],
+    "year": 2023,
+    "thumbnail": "/assets/henkai-web.png"
+  },
+  {
+    "id": 2,
+    "title": "Andrej Sipka",
+    "description": "Personal website.",
+    "tags": [
+      {
+        "id": 1,
+        "label": "Design"
+      },
+      {
+        "id": 2,
+        "label": "SSR"
+      },
+      {
+        "id": 6,
+        "label": "Angular"
+      }
+    ],
+    "year": 2024,
+    "url": "https://github.com/andrejsipka/andrejsipka",
+    "thumbnail": "/assets/andrejsipka-web.png"
+  }
+]

@@ -1,0 +1,62 @@
+:is(a) {
+  color: hsl(var(--primary));
+  text-decoration: none;
+}
+
+:is(a, button) {
+  cursor: pointer !important;
+}
+
+.button {
+  text-decoration: none;
+  min-width: 10rem;
+  width: max-content;
+  height: 4rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+
+  /* TODO: possible to use mixin */
+  &__primary {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+
+    &:hover {
+      background-color: hsl(var(--primary) / .9);
+    }
+  }
+
+  &__secondary {
+    background-color: hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+
+    &:hover {
+      background-color: hsl(var(--accent));
+      color: hsl(var(--accent-foreground));
+    }
+  }
+
+  &__outlined {
+    background-color: hsl(var(--primary-foreground));
+    color: hsl(var(--primary));
+    border: 1px solid hsl(var(--input));
+
+    &:hover {
+      background-color: hsl(var(--accent));
+      color: hsl(var(--accent-foreground));
+    }
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid hsl(var(--ring));
+  }
+}
+
+.link {
+  &--underline {
+    text-decoration: underline;
+  }
+}

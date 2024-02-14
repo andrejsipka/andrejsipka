@@ -1,0 +1,69 @@
+<section class="hero hero--grid-cols-2 aboutpage-hero">
+    <div class="hero__container">
+        <article class="hero__layout">
+            <div>
+                <header>
+                    <h1 class="heading heading__primary">About me</h1>
+                </header>
+
+                <p class="text text__medium">
+                    My name is Andrej and I’m 23-year-old developer from Slovakia living in Aalborg,
+                    Denmark. Here is studied Frontend development and UX/UI at University College of
+                    Northern Denmark. I have more than <strong>2+ years</strong> of experience working with frontend
+                    technologies and user interfaces.
+                </p>
+                <p class="text text__medium">
+                    My core values are <strong>strong work ethic, open-mindedness, problem-solving</strong>
+                    and <strong>deep curiosity</strong>.
+                </p>
+            </div>
+
+            <div>
+                <img ngSrc="/assets/bike.png" fill priority alt="Me" class="drawing" style="height: 360px">
+              <p>Love biking! Feel free to check my activities on <a class="link link--underline"><strong>Strava</strong></a>.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="block work">
+    <div class="block__container">
+        <div class="block__layout">
+            <header>
+                <h1 class="heading heading__secondary">Work Experience</h1>
+            </header>
+
+            <div>
+                @for(item of experienceService.workExperience(); track item.id) {
+                  <app-experience-card [item]="item"/>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block work">
+    <div class="block__container">
+        <div class="block__layout">
+            <header>
+                <h1 class="heading heading__secondary">Education</h1>
+            </header>
+          <div>
+            @for(item of experienceService.education(); track item.id) {
+              <app-experience-card [item]="item"/>
+            }
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="block">
+  <div class="block__container">
+    <div class="block__layout">
+      <h1 class="heading heading__secondary">Get in touch</h1>
+      <p class="text text__medium">You can find me on
+        <a class="link link--underline" href="https://www.linkedin.com/in/andrejsipka/" target="_blank"><strong>LinkedIn</strong></a>
+        and <a class="link link--underline" target="_blank" href="https://github.com/andrejsipka"><strong>GitHub</strong></a>.</p>
+    </div>
+  </div>
+</section>

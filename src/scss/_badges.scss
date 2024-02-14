@@ -1,0 +1,25 @@
+.badge {
+  height: 2.4rem;
+  padding: 0 1.6rem;
+  background-color: hsl(var(--secondary-foreground));
+  color: hsl(var(--secondary));
+  border-radius: var(--radius);
+  display: inline-flex;
+  align-items: center;
+
+  &--primary {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+
+  &--secondary {
+    background-color: hsl(var(--secondary-foreground));
+    color: hsl(var(--secondary));
+  }
+
+  &--outlined {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    border: 1px solid hsl(var(--input))
+  }
+}
